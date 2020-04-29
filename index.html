@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My People Mini Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+
+
+<h1>My People</h1>
+
+<button id = "getUser">press me!</button>
+<div id = "results" > </div>
+
+<script id="userData-template" type="text/x-handlebars-template">   
+
+{{#each userData}}
+    <div class = "result">
+    <label id = "{{id}}" class = "name" >{{first}} {{last}} </label>
+    <a class= "email" href="{{email}}">{{email}}</a>
+    </div>
+    {{/each}}
+    
+   
+
+</script>
+
+
+
+
+
+
+
+<body>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
