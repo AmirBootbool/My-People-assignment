@@ -1,2 +1,2 @@
-# my-people
-my people mini project
+# My-People
+my people mini assigment
